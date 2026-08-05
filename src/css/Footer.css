@@ -1,0 +1,268 @@
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer{
+
+    position:relative;
+
+    background:#111827;
+
+    padding:70px 8% 35px;
+
+    border-top:1px solid rgba(56,189,248,.25);
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+      CONTAINER
+=========================== */
+
+.footer-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+/* ===========================
+        LOGO
+=========================== */
+
+.footer-logo{
+
+    font-size:42px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo span{
+
+    color:#38BDF8;
+
+}
+
+/* ===========================
+      DESCRIPTION
+=========================== */
+
+.footer-text{
+
+    width:600px;
+
+    max-width:100%;
+
+    color:#CBD5E1;
+
+    line-height:32px;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+      SOCIAL ICONS
+=========================== */
+
+.footer-social{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.footer-social a{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#38BDF8;
+
+    background:#1E293B;
+
+    border:1px solid rgba(56,189,248,.25);
+
+    transition:.35s;
+
+    font-size:24px;
+
+}
+
+.footer-social a:hover{
+
+    transform:translateY(-8px) rotate(10deg);
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,.6);
+
+}
+
+/* ===========================
+      COPYRIGHT
+=========================== */
+
+.copyright{
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+      BACK TO TOP
+=========================== */
+
+.top-btn{
+
+    position:absolute;
+
+    right:45px;
+
+    bottom:45px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.top-btn:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,.6);
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.footer{
+
+padding:60px 5% 30px;
+
+}
+
+.footer-logo{
+
+font-size:34px;
+
+}
+
+.footer-text{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.footer-social{
+
+gap:15px;
+
+}
+
+.footer-social a{
+
+width:50px;
+
+height:50px;
+
+font-size:20px;
+
+}
+
+.top-btn{
+
+width:50px;
+
+height:50px;
+
+right:20px;
+
+bottom:20px;
+
+}
+
+}
+@media(max-width:768px){
+
+.footer h2{
+
+font-size:38px;
+
+}
+
+.footer p{
+
+font-size:17px;
+
+padding:0 20px;
+
+}
+
+.footer-social{
+
+gap:18px;
+
+}
+
+.footer-bottom{
+
+font-size:15px;
+
+text-align:center;
+
+}
+
+}

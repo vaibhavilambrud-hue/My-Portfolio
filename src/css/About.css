@@ -1,0 +1,139 @@
+/* ===========================
+        ABOUT SECTION
+=========================== */
+
+.about{
+    min-height:100vh;
+    background:#0F172A;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:70px 8% 40px;
+
+    scroll-padding-top: 90px;
+}
+
+/* LEFT IMAGE */
+
+.about-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.about-image img{
+    width:360px;
+    height:360px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38BDF8;
+    box-shadow:0 0 40px rgba(56,189,248,.45);
+    transition:.5s;
+}
+
+.about-image img:hover{
+    transform:scale(1.05);
+}
+
+/* RIGHT CONTENT */
+
+.about-content{
+    flex:1;
+}
+
+.about-content h4{
+    color:#38BDF8;
+    letter-spacing:2px;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.about-content h2{
+    color:white;
+    font-size:52px;
+    margin-bottom:18px;
+}
+
+.about-content h2 span{
+    color:#38BDF8;
+}
+
+.about-content p{
+    color:#CBD5E1;
+    font-size:18px;
+    line-height:34px;
+    margin-bottom:25px;
+}
+
+/* ===========================
+        CARDS
+=========================== */
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+/* CARD */
+
+.about-card{
+    background:#1E293B;
+    border:1px solid rgba(56,189,248,.35);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(56,189,248,.15);
+}
+
+.about-card:hover{
+    transform:translateY(-10px);
+    border-color:#38BDF8;
+    box-shadow:0 0 30px rgba(56,189,248,.45);
+}
+
+.about-card h3{
+    color:#38BDF8;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.about-card p{
+    color:#FFFFFF;
+    font-size:20px;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.about-card span{
+    display:block;
+    color:#94A3B8;
+    font-size:15px;
+    line-height:25px;
+}
+@media(max-width:992px){
+
+.about-container{
+
+flex-direction:column;
+
+}
+
+.about-left,
+.about-right{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.about-right img{
+
+width:260px;
+
+}
+
+}

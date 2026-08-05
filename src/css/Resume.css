@@ -1,0 +1,353 @@
+/* ===========================
+        RESUME SECTION
+=========================== */
+
+.resume{
+    min-height:100vh;
+    background:#0F172A;
+    padding:90px 8%;
+    text-align:center;
+}
+
+.resume h4{
+    color:#38BDF8;
+    letter-spacing:2px;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.resume h2{
+    color:#fff;
+    font-size:50px;
+    margin-bottom:60px;
+}
+
+.resume h2 span{
+    color:#38BDF8;
+}
+
+/* ===========================
+        ENVELOPE
+=========================== */
+
+.envelope{
+    width:500px;
+    height:550px;
+    margin:auto;
+    position:relative;
+    border-radius:25px;
+    overflow:hidden;
+
+    background:#1E293B;
+
+    border:2px solid rgba(56,189,248,.35);
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,.18);
+
+    transition:.4s;
+}
+
+.envelope:hover{
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,.5),
+        0 0 45px rgba(56,189,248,.25);
+
+}
+
+/* ===========================
+      RESUME PAPER
+=========================== */
+
+.resume-paper{
+
+    position:absolute;
+
+    left:50%;
+
+    top:130px;
+
+    transform:translateX(-50%);
+
+    width:80%;
+
+    height:350px;
+
+    background:whitesmoke;
+
+    border-radius:12px;
+
+    padding:22px;
+
+    z-index:1;
+
+    transition:.7s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.envelope:hover .resume-paper{
+
+    top:35px;
+
+}
+
+/* ===========================
+       PAPER CONTENT
+=========================== */
+
+.paper-header{
+
+    text-align:center;
+
+}
+
+.paper-header svg{
+
+    font-size:42px;
+
+    color:#38BDF8;
+
+    margin-bottom:10px;
+
+}
+
+.paper-header h3{
+
+    color:#0F172A;
+
+    margin-bottom:5px;
+
+}
+
+.paper-header p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.paper-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    margin-top:25px;
+
+    text-align:left;
+
+}
+
+.paper-content h5{
+
+    color:#38BDF8;
+
+    margin-bottom:10px;
+
+}
+
+.paper-content p,
+
+.paper-content li{
+
+    color:#333;
+
+    font-size:14px;
+
+    line-height:24px;
+
+}
+/* ===========================
+      ENVELOPE FLAPS
+=========================== */
+
+.flap{
+    position:absolute;
+    bottom:70px;
+    width:89%;
+    height:230px;
+    background:linear-gradient(145deg,#182235,#243247);
+    z-index:3;
+    transition:.7s;
+}
+
+/* Left Triangle */
+
+.flap-left{
+    left:0;
+    clip-path:polygon(0 0,100% 100%,0 100%);
+}
+
+/* Right Triangle */
+
+.flap-right{
+    right:0;
+    clip-path:polygon(100% 0,100% 100%,0 100%);
+}
+
+/* Hover animation */
+
+.envelope:hover .flap-left{
+    transform:translateY(8px);
+}
+
+.envelope:hover .flap-right{
+    transform:translateY(8px);
+}
+
+/* ===========================
+          LOCK
+=========================== */
+
+.lock{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:95px;
+
+    transform:translateX(-50%);
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#142033;
+
+    border:3px solid #38BDF8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:5;
+
+    color:#38BDF8;
+
+    font-size:28px;
+
+    transition:.5s;
+
+    box-shadow:0 0 20px rgba(56,189,248,.45);
+
+}
+
+.envelope:hover .lock{
+
+    transform:translateX(-50%) rotate(15deg) scale(1.1);
+
+}
+
+/* ===========================
+       DOWNLOAD BUTTON
+=========================== */
+
+.download-btn{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:20px;
+
+    transform:translateX(-50%);
+
+    width:85%;
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    z-index:6;
+
+    transition:.4s;
+
+}
+
+.download-btn:hover{
+
+    background:white;
+
+    transform:translateX(-50%) scale(1.04);
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.envelope{
+
+width:95%;
+
+height:540px;
+
+}
+
+.resume-paper{
+
+width:84%;
+
+height:330px;
+
+}
+
+.paper-content{
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+.resume h2{
+
+font-size:38px;
+
+}
+
+.download-btn{
+
+font-size:18px;
+
+}
+
+}
+.floating-paper{
+    transform:translateX(-50%) translateY(0);
+}
+
+.envelope:hover .floating-paper{
+    transform:translateX(-50%) translateY(-90px);
+}
