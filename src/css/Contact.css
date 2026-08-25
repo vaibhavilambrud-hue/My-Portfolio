@@ -70,6 +70,8 @@
 .info-card{
     display:flex;
     align-items:center;
+    text-decoration: none;
+    color: inherit;
     gap:20px;
 
     background:#1E293B;

@@ -102,7 +102,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="info-card">
+            <a
+            href="https://www.linkedin.com/in/vaibhavee-lambrud-30847b2b2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="info-card"
+            >
               <FaLinkedin />
               <div>
                 <h5>LinkedIn</h5>
@@ -110,17 +115,22 @@ const Contact = () => {
                   linkedin.com/in/vaibhavee-lambrud-30847b2b2
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div className="info-card">
+            <a
+            href="https://github.com/vaibhavilambrud-hue"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="info-card"
+            >
               <FaGithub />
               <div>
                 <h5>GitHub</h5>
                 <span>
                   github.com/vaibhavilambrud-hue
-                </span>
-              </div>
-            </div>
+                  </span>
+                  </div>
+                  </a>
 
           </div>
         </motion.div>
