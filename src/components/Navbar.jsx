@@ -1,6 +1,7 @@
 import "./../css/Navbar.css";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import VL from "../assets/VL.pdf";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,7 +66,7 @@ function Navbar() {
 
         <li className="mobile-btn">
           <a
-            href="/resume.pdf"
+            href={VL}
             download
             className="cv-btn"
             onClick={() => setMenuOpen(false)}
@@ -78,7 +79,7 @@ function Navbar() {
 
       {/* Desktop Download Button */}
 
-      <a href="/resume.pdf" download className="cv-btn desktop-btn">
+      <a href={VL} download className="cv-btn desktop-btn">
         Download CV
       </a>
 
