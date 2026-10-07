@@ -13,7 +13,7 @@
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 7%;
+    padding:18px 30px 18px 5 0px;
     background:#0F172A;
 
     border-bottom:1px solid rgba(255,255,255,.08);
@@ -58,6 +58,7 @@
 
 .cv-btn{
     padding:14px 30px;
+    margin-right: 5px;
     background:#38BDF8;
     color:white;
     text-decoration:none;

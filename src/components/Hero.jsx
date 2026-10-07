@@ -25,12 +25,10 @@ function Hero() {
             sequence={[
               "MERN Stack Developer",
               2000,
-              "React Developer",
+              "Web Developer",
               2000,
               "Frontend Developer",
-              2000,
-              "Node.js Developer",
-              2000,
+              2000
             ]}
             wrapper="span"
             speed={50}
