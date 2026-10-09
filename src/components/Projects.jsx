@@ -3,7 +3,7 @@ import "./../css/Projects.css";
 import finance from "../assets/image01.png";
 import rentmaze from "../assets/image02.png";
 import ecommerce from "../assets/image03.png";
-import oral from "../assets/image04.png";
+import bubbleGame from "../assets/BubbleG.png"
 import portfolio from "../assets/image5.png";
 
 import { motion } from "framer-motion";
@@ -200,7 +200,7 @@ function Projects() {
 
 
         {/* ================= Project 4 ================= */}
-
+  
         <motion.div
           className="timeline-item right"
           initial={{ opacity: 0, x: 100 }}
@@ -208,52 +208,48 @@ function Projects() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-
           <div className="project-content">
-
-            <h3>Oral Disease Detection</h3>
+            <h3>Bubble Game</h3>
 
             <p>
-              AI based disease prediction system using image processing and
-              machine learning for detecting oral diseases from images.
+              An interactive Bubble Game built with React and Vite,
+              featuring a fun gameplay experience with a modern,
+              responsive user interface.
             </p>
 
             <div className="tech-stack">
-              <span>Python</span>
-              <span>OpenCV</span>
-              <span>Machine Learning</span>
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Vite</span>
             </div>
-{/* 
+
             <div className="project-buttons">
-
               <a
-                href="YOUR_ORAL_GITHUB_LINK"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-btn"
-              >
-                GitHub ↗
-              </a>
-
-              <a
-                href="YOUR_ORAL_LIVE_LINK"
+                href="https://bubble-game-iota-blond.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="live-btn"
               >
-                Live Demo ↗
+                Play Game ↗
               </a>
-
-            </div> */}
-
+            </div>
           </div>
 
           <div className="timeline-dot">4</div>
-
-          <div className="project-image">
-            <img src={oral} alt="Oral Disease Detection" />
-          </div>
-
+           <div className="project-image">
+        <img
+          src={bubbleGame}
+          alt="Bubble Game Preview"
+          style={{
+            width: "100%",
+            height: "250px",
+            objectFit: "cover",
+            borderRadius: "12px",
+            display: "block",
+          }}
+        />
+      </div>
         </motion.div>
 
 
